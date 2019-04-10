@@ -8,12 +8,12 @@ function handleFileSelect(evt) {
         '<div id="prety_good">' +
         '<img src="' + uri + '" /></div>'
       );
-      var doc = new jsPDF('s', 'px', [620, 1754]);
+      var doc = new jsPDF('s', 'px', [width, height]);
       doc.addFont('zongyi-normal.ttf', 'zongyi', 'normal');
       doc.setFont('zongyi');
       var imageData = "" + uri + "";
       doc.setFontSize(20);
-      doc.addImage(imageData, 'PNG', 0, 0, 1240, 1754);
+      doc.addImage(imageData, 'PNG', 0, 0, width, height);
       doc.text(100, 100, '尧哥');
       doc.save('book.pdf');
       NProgress.done();
