@@ -24,7 +24,8 @@
 </head>
 
 <body>
-    <a data-downloadpdf="1" id="down_pdf" href="javascript:void(0)">下载</a>
+    <a data-doc-tpye="csst" data-downloadpdf="1" class="down_pdf" href="javascript:void(0)">下载</a>
+    <a data-doc-tpye="npm" data-downloadpdf="2" class="down_pdf" href="javascript:void(0)">下载2</a>
     <div class=container>
 
         <!-- Needed to trigger correct custom font rasterization in Chrome -->
@@ -43,9 +44,11 @@
 
                     <div class=col-md-6>
                         <div class="preview"></div>
+                        <div class="load-target2"></div>
                     </div>
                 </div>
             </li>
+            <li id="now"></li>
         </ul>
     </div>
 </body>
